@@ -1,0 +1,46 @@
+🚀 End-to-End CI/CD Pipeline for Amazon Prime Clone on AWS
+Project Summary
+Built and deployed a scalable web application (Amazon Prime Clone) using a comprehensive DevOps toolchain. This project demonstrates proficiency in Infrastructure as Code (IaC), CI/CD automation, container orchestration, security scanning, and monitoring.
+
+🧱 Infrastructure Provisioning
+- Utilized Terraform to provision AWS resources including EC2 instances, VPC, IAM roles, and EKS clusters.
+- Configured AWS CLI and IAM credentials for secure access and automation.
+- Created SSH key pairs for EC2 access and integrated with Jenkins agents.
+
+🔄 CI/CD Pipeline with Jenkins
+- Set up Jenkins for continuous integration and delivery.
+- Configured Global Tool Configuration for JDK 17, NodeJS, Docker, and SonarQube Scanner.
+- Installed essential Jenkins plugins:
+- SonarQube Scanner
+- NodeJS
+- Docker Pipeline
+- Prometheus Metrics
+
+📦 Build & Quality Assurance
+- Git Checkout: Pulled source code from GitHub repository.
+- SonarQube Analysis: Performed static code analysis and enforced quality gates.
+- NPM Install: Installed NodeJS dependencies for application build.
+- Trivy Scan: Conducted security vulnerability scanning using Aqua Trivy.
+- Docker Build: Containerized the application and tagged images.
+- Push to AWS ECR: Uploaded Docker images to Amazon Elastic Container Registry (ECR).
+- Image Cleanup: Removed unused images to optimize Jenkins server storage.
+
+🚀 Continuous Deployment with ArgoCD
+- Created Kubernetes manifests for application deployment.
+- Used ArgoCD for GitOps-based deployment to AWS EKS.
+- Ensured declarative and version-controlled deployment workflows.
+
+📊 Monitoring & Observability
+- Installed Prometheus and Grafana using Helm charts.
+- Configured dashboards for real-time metrics, alerts, and cluster health monitoring.
+
+🧠 Skills & Tools Demonstrated
+| Category | Tools & Technologies | 
+| Infrastructure | Terraform, AWS EC2, EKS, IAM, VPC | 
+| CI/CD Automation | Jenkins, GitHub, SonarQube, Docker, NPM | 
+| Security & Quality | Aqua Trivy, SonarQube | 
+| Containerization | Docker, AWS ECR | 
+| Deployment | Kubernetes, ArgoCD | 
+| Monitoring | Prometheus, Grafana, Helm | 
+| Scripting & Config | YAML, Bash, Terraform HCL | 
+
